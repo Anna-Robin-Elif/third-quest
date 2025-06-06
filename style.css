@@ -1,0 +1,90 @@
+:root{
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey700: hsl(0, 0%, 20%);
+--Gray800: hsl(0, 0%, 12%);
+--Gray900: hsl(0, 0%, 8%);
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/inter-v19-latin/inter-v19-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/inter-v19-latin/inter-v19-latin-600.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/inter-v19-latin/inter-v19-latin-700.woff2') format('woff2'); 
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+    background-color: var(--Gray900);
+    color: var(--White);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: var(--Gray800);
+    width: 340px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.box__button{
+    background-color: var(--Grey700);
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    width: 320px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.box__button:hover{
+    background-color: var(--Green);
+    color: var(--Gray900);
+    box-shadow: -2px -2px 0px rgba(0, 0, 0, 100);
+}
+
+.box__img{
+  display: flex;
+  justify-content: center;
+}
+
+.box__img img{
+  border-radius: 4rem;
+  width: 50%;
+  max-width: 12rem;
+  margin-bottom: 1rem;
+}
+
+.box__text{
+  margin-bottom: 1rem;
+}
+
+h3{
+  color: var(--Green);
+}
