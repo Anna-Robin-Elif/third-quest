@@ -52,13 +52,11 @@ section {
     max-width: 320px;
     border-radius: 20px;
     width: 90%;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding: 2rem;
-    
-
 }
 
 .box__button{
@@ -80,22 +78,33 @@ section {
 
 .box__img{
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .box__img img{
-  border-radius: 4rem;
-  width: 50%;
-  max-width: 12rem;
+  border-radius: 4rem; 
+  width: 30%;
+  max-width: 4rem;
   margin-bottom: 1rem;
 }
 
 .box__text{
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+.box__text p{
+  padding: 1rem;
+}
+
+h1{
+  font-size: 1.7rem;
 }
 
 h3{
   color: var(--Green);
+  line-height: 0.3;
 }
 
 @media (max-width: 357px) {
